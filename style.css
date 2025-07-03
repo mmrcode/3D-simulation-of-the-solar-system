@@ -1,0 +1,122 @@
+/*
+  Solar System Simulation - Frontend Assignment
+  Name: Mohammad Muqsit Raja
+  Date: 04-07-2025
+  Description: Styles for 3D Solar System
+*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #181c20;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#controls {
+  background: #23272e;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  /* NOTE: Controls panel styling */
+}
+
+#controls h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.control-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+#canvas-container {
+  flex: 1;
+  min-width: 320px;
+  min-height: 400px;
+  background: #101014;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+  /* TODO: Maybe add a border? */
+}
+
+#controls button {
+  display: inline-block;
+  margin: 0.3rem 0.5rem 1rem 0;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #3d9be9;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#controls button:hover {
+  background: #2561a7;
+}
+
+body.light-mode {
+  background: #f4f4f4;
+  color: #222;
+}
+body.light-mode #controls {
+  background: #fff;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+body.light-mode #canvas-container {
+  background: #e6e6e6;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+body.light-mode #controls button {
+  background: #222;
+  color: #fff;
+}
+body.light-mode #controls button:hover {
+  background: #3d9be9;
+}
+
+@media (max-width: 900px) {
+  #container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  #canvas-container {
+    min-height: 300px;
+  }
+  #controls {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+/* NOTE: End of file! */ 
