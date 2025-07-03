@@ -4,6 +4,7 @@
 Student: Mohammmad Muqsit Raja
 Date: 04/07/2025
 ---
+[![View Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=github)](https://mmrcode.github.io/3D-simulation-of-the-solar-system/)
 
 ## Features
 - 3D simulation of the solar system using Three.js
